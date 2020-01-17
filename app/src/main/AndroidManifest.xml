@@ -9,15 +9,13 @@
         android:required="true"/>
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    // Android sdk 23 (M) requires this permission when starting BLE scan.........
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@android:style/Theme.DeviceDefault">
+        android:supportsRtl="true">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
